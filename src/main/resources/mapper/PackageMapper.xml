@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="tws.repository.PackageMapper">
+   
+
+    <insert id="insert" parameterType="tws.entity.PackageInfo">
+       insert into package (`number`,`name`,`phone`,`weight`) values(#{onePackage.number},#{onePackage.name},#{onePackage.phone},#{onePackage.weight});
+    </insert>
+</mapper>
