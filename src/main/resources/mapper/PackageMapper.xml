@@ -4,6 +4,11 @@
    
 
     <insert id="insert" parameterType="tws.entity.PackageInfo">
-       insert into package (`number`,`name`,`phone`,`weight`) values(#{onePackage.number},#{onePackage.name},#{onePackage.phone},#{onePackage.weight});
+       insert into package (`number`,`name`,`phone`,`weight`,`status`) values(#{onePackage.number},#{onePackage.name},#{onePackage.phone},#{onePackage.weight},#{onePackage.status});
     </insert>
+    
+    <insert id="update" parameterType="tws.entity.PackageInfo">
+       update package status=#{onePackage.status},bookingTime=#{onePackage.bookingTime} where number=#{onePackage.number};
+    </insert>
+    
 </mapper>

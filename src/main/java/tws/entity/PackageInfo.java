@@ -5,6 +5,20 @@ public class PackageInfo {
 	private String name;
 	private String phone;
 	private String weight;
+	private String bookingTime;
+	public String getBookingTime() {
+		return bookingTime;
+	}
+	public void setBookingTime(String bookingTime) {
+		this.bookingTime = bookingTime;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	private String status;
 	public String getNumber() {
 		return number;
 	}
